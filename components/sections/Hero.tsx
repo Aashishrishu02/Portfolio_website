@@ -7,26 +7,34 @@ import { useState, useEffect } from 'react'
 
 export default function Hero() {
   const [displayText, setDisplayText] = useState('')
-  const roles = ['Software Developer', 'Python Enthusiast', 'Web Developer']
   const [roleIndex, setRoleIndex] = useState(0)
+  const roles = ['Software Developer', 'Python Enthusiast', 'Web Developer']
 
   useEffect(() => {
     const text = roles[roleIndex]
-    let index = 0
+    let currentIndex = 0
+    let isTyping = true
 
     const interval = setInterval(() => {
-      if (index < text.length) {
-        setDisplayText(text.substring(0, index + 1))
-        index++
-      } else {
-        setRoleIndex((prev) => (prev + 1) % roles.length)
-        setDisplayText('')
-        index = 0
+      if (isTyping) {
+        if (currentIndex < text.length) {
+          setDisplayText(text.substring(0, currentIndex + 1))
+          currentIndex++
+        } else {
+          // Pause before switching to next role
+          isTyping = false
+          setTimeout(() => {
+            isTyping = true
+            currentIndex = 0
+            setRoleIndex((prev) => (prev + 1) % roles.length)
+            setDisplayText('')
+          }, 1500)
+        }
       }
-    }, 100)
+    }, 80)
 
     return () => clearInterval(interval)
-  }, [roleIndex, roles])
+  }, [roleIndex, roles.length])
 
   const containerVariants = {
     hidden: { opacity: 0 },
