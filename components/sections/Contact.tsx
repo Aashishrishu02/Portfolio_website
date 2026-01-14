@@ -70,7 +70,7 @@ export default function Contact() {
       icon: MapPin,
       label: 'Location',
       value: 'Muzaffarpur, India',
-      href: '#',
+      href: 'https://www.google.com/maps/search/Muzaffarpur,+India',
     },
   ]
 
@@ -88,6 +88,8 @@ export default function Contact() {
             <motion.a
               key={index}
               href={info.href}
+              target={info.label === 'Location' ? '_blank' : undefined}
+              rel={info.label === 'Location' ? 'noopener noreferrer' : undefined}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
