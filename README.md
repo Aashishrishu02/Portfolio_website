@@ -268,6 +268,7 @@ Feel free to fork this repository and submit pull requests for any improvements.
 - **Email**: ashishkumarbhadai@gmail.com
 - **Phone**: +91-7061460429
 - **GitHub**: [Aashishrishu02](https://github.com/Aashishrishu02)
+- **LinkedIn**: [Aashish Singh](https://www.linkedin.com/in/aashish-singh-4298482b2?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 - **Location**: Muzaffarpur, India
 
 ## 🙏 Acknowledgments

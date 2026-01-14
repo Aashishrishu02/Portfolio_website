@@ -23,7 +23,7 @@ export default function Footer() {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      href: 'https://linkedin.com/in/ashish-kumar-bhadu',
+      href: 'https://www.linkedin.com/in/aashish-singh-4298482b2?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       color: 'hover:text-blue-500',
     },
   ]
