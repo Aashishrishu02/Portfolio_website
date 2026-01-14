@@ -26,7 +26,7 @@ export default function Hero() {
     }, 100)
 
     return () => clearInterval(interval)
-  }, [roleIndex])
+  }, [roleIndex, roles])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -77,7 +77,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
           >
-            Hi, I'm{' '}
+            Hi, I&apos;m{' '}
             <span className="gradient-text">
               Ashish <br /> Kumar
             </span>
@@ -96,7 +96,7 @@ export default function Hero() {
           >
             Aspiring software developer passionate about crafting efficient
             solutions. I specialize in Python, JavaScript, and modern web
-            technologies. Let's build something amazing together!
+            technologies. Let&apos;s build something amazing together!
           </motion.p>
 
           {/* CTA Buttons */}

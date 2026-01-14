@@ -28,15 +28,15 @@ export default function About() {
           viewport={{ once: true }}
         >
           <p className="text-slate-300 text-lg leading-relaxed mb-6">
-            I'm an aspiring software developer from Muzaffarpur, India, with a
+            I&apos;m an aspiring software developer from Muzaffarpur, India, with a
             passion for building efficient and scalable solutions. Currently
-            pursuing a B.Tech degree, I've been honing my skills in both
+            pursuing a B.Tech degree, I&apos;ve been honing my skills in both
             frontend and backend technologies.
           </p>
 
           <p className="text-slate-400 text-base leading-relaxed mb-6">
             My journey into tech started with curiosity about how things work
-            under the hood. I've worked on multiple projects that challenged me
+            under the hood. I&apos;ve worked on multiple projects that challenged me
             to think creatively and solve complex problems. I believe in
             continuous learning and staying updated with the latest trends in
             the tech industry.
