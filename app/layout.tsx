@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Full Stack',
     'Web Development',
   ],
-  author: 'Ashish Kumar',
+  authors: [{ name: 'Ashish Kumar' }],
   openGraph: {
     type: 'website',
     locale: 'en_IN',

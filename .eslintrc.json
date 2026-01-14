@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-module.exports = {
-  extends: 'next/core-web-vitals',
+{
+  "extends": "next/core-web-vitals",
+  "rules": {}
 }
